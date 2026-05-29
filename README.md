@@ -37,9 +37,9 @@ import java.util.*;
             List<E>      Set<E>       Queue<E>
                │            │             │
        ┌───────┴──────┐  ┌──┴──────┐  ┌──┴───────────┐
-  ArrayList  LinkedList HashSet  TreeSet  PriorityQueue  Deque
+  ArrayList  LinkedListDemo HashSet  TreeSet  PriorityQueue  Deque
   Vector     Stack    LinkedHashSet         ArrayDeque
-                                               LinkedList
+                                               LinkedListDemo
 
 
                         «interface»
@@ -67,7 +67,7 @@ An **ordered** collection that allows **duplicate** elements. Elements can be ac
 - Allows positional access via `get(index)`
 - Duplicates are permitted
 
-**Implementations:** `ArrayList`, `LinkedList`, `Vector`, `Stack`
+**Implementations:** `ArrayList`, `LinkedListDemo`, `Vector`, `Stack`
 
 ---
 
@@ -88,14 +88,14 @@ A collection designed for **FIFO (First-In, First-Out)** processing. Elements ar
 - Used for task scheduling, BFS, buffers
 - `PriorityQueue` orders by natural order or comparator
 
-**Implementations:** `PriorityQueue`, `ArrayDeque`, `LinkedList`
+**Implementations:** `PriorityQueue`, `ArrayDeque`, `LinkedListDemo`
 
 ---
 
 ### `Deque<E>`
 A **double-ended queue** that allows insertion and removal from **both ends**. Can act as both a stack and a queue.
 
-**Implementations:** `ArrayDeque`, `LinkedList`
+**Implementations:** `ArrayDeque`, `LinkedListDemo`
 
 ---
 
@@ -114,7 +114,7 @@ Not a true `Collection`, but part of the framework. Stores **key-value pairs** w
 | Class | Interface | Ordered | Sorted | Duplicates | Null | Thread-Safe |
 |---|---|---|---|---|---|---|
 | `ArrayList` | `List` | ✅ (insertion) | ❌ | ✅ | ✅ | ❌ |
-| `LinkedList` | `List`, `Deque` | ✅ (insertion) | ❌ | ✅ | ✅ | ❌ |
+| `LinkedListDemo` | `List`, `Deque` | ✅ (insertion) | ❌ | ✅ | ✅ | ❌ |
 | `Vector` | `List` | ✅ (insertion) | ❌ | ✅ | ✅ | ✅ |
 | `Stack` | `List` | ✅ (LIFO) | ❌ | ✅ | ✅ | ✅ |
 | `HashSet` | `Set` | ❌ | ❌ | ❌ | ✅ (one) | ❌ |
@@ -209,7 +209,7 @@ Need a single group of elements?
     ├── Duplicates allowed?
     │       ├── Yes → Use a List
     │       │       ├── Fast random access?    → ArrayList  ✅
-    │       │       └── Frequent insert/delete? → LinkedList
+    │       │       └── Frequent insert/delete? → LinkedListDemo
     │       └── No → Use a Set
     │               ├── Insertion order?  → LinkedHashSet
     │               ├── Sorted order?     → TreeSet
@@ -224,7 +224,7 @@ Need a single group of elements?
 | Collection | Guide |
 |---|---|
 | ✅ **ArrayList** | [ArrayList — Full Guide](./ArrayList.md) |
-| 🔜 LinkedList | *Coming soon* |
+| 🔜 LinkedListDemo | *Coming soon* |
 | 🔜 HashSet / TreeSet | *Coming soon* |
 | 🔜 HashMap / TreeMap | *Coming soon* |
 | 🔜 PriorityQueue | *Coming soon* |

@@ -3,6 +3,15 @@ public class Main {
 
         System.out.println("Hello world!");
 
-        ArrayListDemo.runArrayListDemo();
+//        ArrayListDemo.runArrayListDemo();
+//        LinkedListDemo.runLinkedListDemo();
+//          VectorDemo.runVectorDemo();
+//            StackDemo.runStackDemo();
+//            QueueDemo.runQueueDemo();
+//        priorityQueueDemo.runPriorityQueueDemo();
+         setDemo.runSetDemo();
     }
+
+
+
 }
